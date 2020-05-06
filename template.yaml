@@ -5,18 +5,31 @@ Description: >
 
 # Parameters
 Parameters:
-  BucketName: quotesappdemosls
+  BucketName:
+    Description: 'Enter Bucket Name'
+    Type: String
+    AllowedPattern: "^[a-z0-9]+$"    
+    Default: 'quotesappdemosls'
 
-  apiGatewayStageName: dev
+  apiGatewayStageName:
+    Type: "String"
+    AllowedPattern: "^[a-z0-9]+$"
+    Default: "quotes"
 
-  lambdaFunctionName: MyLambdaQuotes
+  lambdaFunctionName:
+    Type: "String"
+    AllowedPattern: "^[a-zA-Z0-9]+[a-zA-Z0-9-]+[a-zA-Z0-9]+$"
+    Default: "my-quotes-function"
+
+Conditions:
+  HasBucketName: !Not [!Equals [!Ref BucketName, '']]
 
 #S3 Bucket hosting the website
 Resources:
   Bucket: 
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: !Ref BucketName
+      BucketName: !If [HasBucketName, !Ref BucketName, !Ref 'AWS::NoValue']
 
 #CloudFront Distribution
   myDistribution:
