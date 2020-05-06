@@ -19,7 +19,7 @@ Parameters:
   lambdaFunctionName:
     Type: "String"
     AllowedPattern: "^[a-zA-Z0-9]+[a-zA-Z0-9-]+[a-zA-Z0-9]+$"
-    Default: "my-quotes-function"
+    Default: "myQuotesLambdaFunction"
 
 Conditions:
   HasBucketName: !Not [!Equals [!Ref BucketName, '']]
