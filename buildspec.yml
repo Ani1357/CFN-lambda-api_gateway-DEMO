@@ -4,8 +4,8 @@ phases:
     commands:
       - aws cloudformation package --template-file template.yaml --s3-bucket quotesappdemosls --output-template-file outputSamTemplate.yaml
       - aws s3 cp index.html s3://quotesappdemosls
-      - aws s3 cp js s3://quotesappdemosls --recursive
-      - aws s3 cp css s3://quotesappdemosls --recursive      
+      - aws s3 cp js s3://quotesappdemosls 
+      - aws s3 cp css s3://quotesappdemosls       
 artifacts:
   type: zip
   files:
