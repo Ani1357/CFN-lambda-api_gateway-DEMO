@@ -1,8 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
-<<<<<<< HEAD
-=======
+
 Transform: 'AWS::Serverless-2016-10-31'
->>>>>>> f9939a3be88b2157de866ad9b48429d0e8d5c6c2
+
 
 Description: >
   SAM
