@@ -5,11 +5,11 @@ Description: >
 
 # Parameters
 Parameters:
-  BucketName: "quotesappdemosls"
+  BucketName: quotesappdemosls
 
-  apiGatewayStageName: "dev"
+  apiGatewayStageName: dev
 
-  lambdaFunctionName: "MyLambdaQuotes"
+  lambdaFunctionName: MyLambdaQuotes
 
 #S3 Bucket hosting the website
 Resources:
