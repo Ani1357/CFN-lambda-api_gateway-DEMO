@@ -2,7 +2,6 @@ AWSTemplateFormatVersion: '2010-09-09'
 
 Description: >
   SAM
-
   Sample SAM Template for SAM
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
