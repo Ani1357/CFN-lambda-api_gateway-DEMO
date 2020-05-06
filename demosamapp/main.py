@@ -1,6 +1,5 @@
 import requests
 import json
-from pprint import pprint
 import random
 
 def quotesfunc(event,context):
