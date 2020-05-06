@@ -128,7 +128,7 @@ Resources:
     Properties:
       Action: "lambda:InvokeFunction"
       FunctionName:
-        GetAtt: "QuotesFunction.Arn"
+        GetAtt: "lambdaFunctionName"
       Principal: "apigateway.amazonaws.com"
       SourceArn: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${QuotesAPI}/*/GET/" 
       
