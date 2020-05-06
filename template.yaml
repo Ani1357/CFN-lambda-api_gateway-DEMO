@@ -9,7 +9,7 @@ Parameters:
     Description: 'Enter Bucket Name'
     Type: String
     AllowedPattern: "^[a-z0-9]+$"    
-    Default: "quotesappdemosls"
+    Default: "democicdlambda"
 
   apiGatewayStageName:
     Type: "String"
