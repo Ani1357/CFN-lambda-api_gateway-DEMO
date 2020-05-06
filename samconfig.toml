@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "serverlesssss"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-w1tzy7oqaqct"
+s3_prefix = "serverlesssss"
+region = "eu-central-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "BucketName=\"democicdlambda\" apiGatewayStageName=\"quotes\" lambdaFunctionName=\"myquoteslambdafunction\""
+
