@@ -2,17 +2,13 @@ import requests
 import json
 import random
 
+response = requests.get("https://type.fit/api/quotes/")
+
+data = response.json()
+
 def quotesfunc(event,context):
-
-    response = requests.get("https://type.fit/api/quotes/")
-
-    data = response.json()
-
+    
     choice = random.choice(data)
-    
-
-    
-
 
     return {
         "statusCode": 200,
