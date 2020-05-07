@@ -58,6 +58,7 @@ textarea {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    color: #aaa;
 }
 
 .wrapper {
@@ -70,18 +71,18 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #222;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #000;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #363635;
 }
 
 .title {
@@ -108,7 +109,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: #1f1816;
 }
 
 nav a:hover,
